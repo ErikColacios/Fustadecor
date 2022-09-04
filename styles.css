@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    background-image: url("imgs/298b.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+    min-height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+
+/* -------------------------------- HEADER ------------------------ */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.829);
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+.logo{
+    padding-left: 40px;
+    width: 230px;
+}
+
+nav ul li{
+    position: relative;
+    float: left;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+nav ul li a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    transition: 0.25s;
+}
+
+
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.829);
+    display: none;
+}
+
+nav ul li ul li{
+    width: 100%;
+}
+
+
+nav ul li:focus-within > ul,
+
+nav ul li:hover > ul{
+    display: initial;
+}
+
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width: 991px){
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    nav{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background-color: rgba(0, 0, 0, 0.801);
+        border-top: 1px solid black;
+        display: none;
+    }
+
+    nav ul li{
+        width: 100%;
+    }
+
+    nav ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul li ul li{
+        padding-left: 5%;
+        background-color: rgba(0, 0, 0, 0.801);
+    }
+
+    #menu-bar:checked ~ nav{
+        display: initial;
+    }
+}
+
+
+
+/* -------------------------------- TITULO ------------------------ */
+
+.titulo{
+    color: white;
+    font-size: 18px;
+    padding-left: 5vw;
+    padding-top: 20vw;
+}
+
+.titulo p{
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
+}
+
+.titulo img{
+    width: 40vw;
+}
+
+.btnLanding{
+    background-color: transparent;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 24px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.btnLanding:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+
+
+@media(max-width: 991px){
+    .titulo{
+        padding-top: 30vw;
+    }
+    .titulo img{
+        width: 450px;
+    }
+}
+
+@media(max-width: 570px){
+    .titulo{
+        padding-top: 55vw;
+        font-size: 14px;
+    }
+    .titulo img{
+        width: 300px;
+    }
+    .btnLanding{
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+}
+
+
+/* -------------------------------- PRESENTACION ------------------------ */
+
+.presentacion{
+    scroll-snap-align: start;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+.presentacion h1{
+    color: orange;
+    font-weight: 600;
+}
+
+/* -------------------------------- Imagenes ------------------------ */
+
+.imagenes div{
+    max-width: 100%;
+    min-height: 60vh;
+}
+
+.img1{
+    background-image: url("imgs/290.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    background-image: url("imgs/0.1.jpg");
+    background-position: center;
+
+    background-size: cover;
+}
+
+
+
+/* ------------------------------- Pequeña o gran escala ---------------------------*/
+
+.escalas{
+    background-color: black;
+    background-image: url("imgs/recursos/blackwood_dark.jpg");
+    color: white;
+    padding: 5%;
+    font-size: 18px;
+}
+
+.escalas h2{
+    font-size: 52px;
+    font-weight: 600;
+    color: orange;
+}
+
+
+.caption-text{
+    padding-top: 15%;
+}
+
+
+@media(max-width: 512px){
+    .presentacion p{
+        font-size: 14px;
+    }
+    .escalas h2 {
+        font-size: 32px;
+    }
+    .escalas p {
+        font-size: 12px;
+    }
+    .caption-text{
+        padding-top: 0;
+    }
+}
+
+
+/*-------------------------------------- Exteiores interiores -----------------------------------*/
+
+.exteriores-interiores{
+    width: 100%;
+    min-height: 80vh;
+    margin-left: 0px !important;
+}
+
+.exteriores-interiores h2{
+    font-size: 4vw;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.664);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: opacity 0.25s;
+    transition: 0.25s;
+}
+
+.exteriores-interiores a{
+    padding: 0 !important;
+    text-decoration: none;
+    color: white;
+}
+
+.exteriores{
+    overflow: hidden;
+}
+
+.imgExteriores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("imgs/101.JPG");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+
+
+.exteriores:hover > .imgExteriores{
+    transform: scale(1.05);
+    filter: grayscale(0);
+    color: white;
+    filter: brightness(1);
+}
+
+.exteriores:hover > .imgExteriores h2{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.interiores{
+    overflow: hidden;
+}
+
+.imgInteriores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("imgs/reforma.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+
+.interiores:hover > .imgInteriores{
+    transform: scale(1.05);
+    filter: grayscale(0);
+    color: white;
+    filter: brightness(1);
+}
+
+.interiores:hover > .imgInteriores h2{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+@media (max-width: 800px){
+    .exteriores-interiores h2{
+        font-size: 45px;
+        opacity: 1;
+    }
+}
+
+
+
+
+.renders{
+    height: 70vh;
+}
+.renders h2{
+    color: orange;
+    font-size: 52px;
+    font-weight: 600;
+}
+.renders .rendersTexto{
+    padding: 7%;
+    float: right;
+    color: white;
+}
+
+.backvideo{
+    position: absolute;
+    right: 0;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .backvideo{
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9){
+    .backvideo{
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 430px){
+    .renders h2{
+        font-size: 32px;
+    }
+}
+
+
+/*------------------------------------------- Contacto -----------------------*/
+
+.contacto{
+    padding: 7%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.contacto h2{
+    color: orange;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.contacto-form input{
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.contacto-form textarea{
+    width: 98%;
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    resize: none;
+}
+
+
+
+.grid{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 50%;
+}
+
+@media (max-width: 634px){
+    .grid{
+        grid-template-columns: auto;
+        grid-template-rows: 25%;
+    }
+
+    .contacto h2{
+        font-size: 32px;
+    }
+}
+
+
+
+footer{
+    padding: 5%;
+    color: white;
+    background-image: url("imgs/recursos/blackwood_dark.jpg");
+}
+
+footer img{
+    width: 230px;
+}
+
+.social ul{ 
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.social a{
+    font-size: 30px;
+}
+
+footer a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px;
+}
+footer a:hover{
+    color: orange;
+}
+
+@media (max-width: 400px){
+    footer{
+        font-size: 12px;
+    }
+    .volver a{
+        font-size: 12px;
+    }
+}
+
+
+#trucazo{
+    opacity: 0;
+}
+/* ::-webkit-scrollbar {
+        display: none;  
+} */
