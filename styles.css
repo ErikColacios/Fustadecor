@@ -390,6 +390,11 @@ header label{
     .renders h2{
         font-size: 32px;
     }
+    .renders{
+        background-image: url("imgs/kiko.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 
