@@ -6,7 +6,7 @@
 }
 
 .hero{
-    background-image: url("../imgs/298b.jpg");
+    background-image: url("./imgs/298b.jpg");
     background-size: cover;
     background-position-y: bottom;
     min-height: 100vh;
