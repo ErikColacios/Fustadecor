@@ -390,6 +390,10 @@ header label{
     .renders h2{
         font-size: 32px;
     }
+}
+
+@media (max-width: 500px){
+
     .renders{
         background-image: url("imgs/kiko.jpg");
         background-size: cover;
