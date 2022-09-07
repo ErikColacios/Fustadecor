@@ -124,7 +124,7 @@ header label{
 
 
 section{
-    background-image: url("/imgs/Recursos/blackwood_dark.jpg");
+    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
     background-size: cover;
     font-size: 18px;
     padding-left: 15%;
@@ -175,19 +175,7 @@ section h2{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-.carousel-container{
-    
-}
+/*----------------------------- Carousel ----------------------------*/
 
 
 .carousel{
@@ -258,12 +246,12 @@ section h2{
 
 
 
-
+/* ------------------------------- Footer ------------------------------------------------*/
 
 footer{
     padding: 5%;
     color: white;
-    background-image: url("/imgs/Recursos/blackwood_dark.jpg");
+    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
 }
 
 footer img{
