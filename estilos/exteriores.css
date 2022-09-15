@@ -140,7 +140,7 @@ section h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../imgs/358b.JPG");
+    background-image: url("./imgs/358b.JPG");
     background-position: top;
     background-size: cover;
     height: 40vh;
