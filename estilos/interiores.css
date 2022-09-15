@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: white;
+}
+
+body{
+    background-image: url("/imgs/Recursos/blackwood_dark.jpg");
+    background-size: cover;
+}
+
+section{
+    padding: 10%;
+    min-height: 100vh;
+}
+
+section h2{
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.comedor1{
+    margin-left: 20px;
+}
+
+.divInfo{
+    padding-bottom: 15%;
+}
+
+
+
+
+@media (max-width: 770px){
+    section{
+        font-size: 14px;
+        padding: 15% 0% 0% 0%
+    }
+    section h2{
+        font-size: 42px;
+    }
+    .comedor1{
+        margin-left: 0px;
+    }
+    .divInfo2 img{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1200px){
+    section{
+        font-size: 14px;
+        padding: 25% 10% 10% 10%;
+    }
+}
+
+
+/* ---------------------------------------- CTA INTERIORES --------------------------------------------- */
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/imgs/cocina4.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 40vh;
+}
+
+.cta h2{
+    font-size: 4vw;
+}
+.cta p{
+    font-size: 1.5vw;
+}
+
+.btnCTA{
+    background-color: transparent;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.btnCTA:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+@media (max-width: 750px){
+    .cta h2{
+        font-size: 6vw;
+    }
+    .cta p{
+        font-size: 2.5vw;
+    }
+    .btnCTA{
+        padding: 10px 30px;
+    }
+}

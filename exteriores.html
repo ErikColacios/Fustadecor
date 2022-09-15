@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fustadecor - Exteriores</title>
     <link rel="stylesheet" href="estilos/exteriores.css">
+    <link rel="stylesheet" href="estilos/styles.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -26,18 +27,18 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">Exteriores</a>
-                    <li><a href="#">Interiores +</a>
+                    <li><a href="interiores.html">Interiores +</a>
                         <ul>
-                            <li><a href="#">Parquets</a></li>
-                            <li><a href="#">Revestimientos</a></li>
-                            <li><a href="#">Mobiliario</a></li>
-                            <li><a href="#">Cocinas</a></li>
-                            <li><a href="#">Puertas</a></li>
+                            <li><a href="interiores.html#parquets">Parquets</a></li>
+                            <li><a href="interiores.html#mobiliario">Mobiliario</a></li>
+                            <li><a href="interiores.html#cocinas">Cocinas</a></li>
+                            <li><a href="interiores.html#revestimientos">Revestimientos</a></li>
+                            <li><a href="interiores.html#escaleras">Escaleras</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Diseño 3D</a></li>
         <li><a href="#">Luxury</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
         </nav>
     </header>
 
@@ -47,7 +48,7 @@
             <div class="container row">
                 <div class="col col-xl-5 col-lg-5 col-md-12 col-sm-12 col-auto me-3 mt-1" data-aos="fade-up">
                     <h2 class="mb-4">Tu zona de confort ideal</h2>
-                    <p>Nunca es tarde para darle un cambio de look a tu terraza, jardin o piscina. Descubre como puedes conseguir que tu lugar favorito luzca más bonito, 
+                    <p>Nunca es tarde para darle un cambio de look a tu terraza, jardín o piscina. Descubre como puedes conseguir que tu lugar favorito luzca más bonito, 
                     elegante y moderno. Y a nosotros esto se nos da muy bien</p>
                 </div>
                 <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto" data-aos="fade-up">
@@ -62,10 +63,10 @@
                     <img src="imgs/11.jpg" class="img-fluid" alt="Patio con piscina">
                 </div>
                 <div class="col col-xl-6 col-lg-5 col-md-12 col-sm-12 col-auto" data-aos="fade-up">
-                    <h2 class="mb-4">Un sinfin de posibilidades</h2>
-                    <p>Tu espacio exterior se puede aprovechar de muchas maneras, solo tienes que saber como sacarle su maximo rendimiento. 
+                    <h2 class="mb-4">Un sinfín de posibilidades</h2>
+                    <p>Tu espacio exterior se puede aprovechar de muchas maneras, solo tienes que saber como sacarle su máximo rendimiento. 
                     Nosotros te aconsejamos y te damos ideas para convertirlo en un lugar más acogedor aprovechando  el espacio y añadiendo elementos decorativos 
-                    para finalmente conseguir un acabado excelente </p>
+                    para finalmente conseguir un acabado excelente</p>
                 </div>
             </div>                    
         </div>
@@ -74,9 +75,9 @@
             <div class="container row">
                 <div class="col col-xl-5 col-lg-5 col-md-12 col-sm-12 col-auto me-1 mt-1" data-aos="fade-up">
                     <h2 class="mb-4">Cuidamos cada detalle</h2>
-                    <p>Queremos que cada tarima, pergola, escalera o zocalo queden perfectos. 
-                    Por eso siempre realizamos nuestros proyectos a mano con el mayor cuidado precisión y atención al detalle; 
-                    y obviamente con los mejores materiales que puedes encontrar.</p>
+                    <p>Queremos que cada tarima, pérgola, escalera o zócalo queden perfectos.
+                    Por eso siempre realizamos nuestros proyectos a mano con el mayor cuidado, precisión y atención al detalle;
+                    y obviamente con los mejores materiales que puedes encontrar</p>
                 </div>
                 <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto" data-aos="fade-up">
                     <img src="imgs/10.jpg" class="img-fluid" alt="Esquina piscina">
@@ -95,29 +96,37 @@
 
     <!----------------------------------------------- CAROUSEL ------------------------------------------->
 
-    <div aria-label="Ultimos proyectos" class="carousel-container">
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="imgs/2.JPG">
-                </li>
-                <li class="slide">
-                    <img src="imgs/222.JPG">
-                </li>
-                <li class="slide">
-                    <img src="imgs/67.JPG">
-                </li>
-                <li class="slide">
-                    <img src="imgs/298b.jpg">
-                </li>
-                <li class="slide">
-                    <img src="imgs/1.jpg">
-                </li>
-            </ul>
-        </div>
+<div aria-label="Ultimos proyectos" class="carousel-container">
+    <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+        <ul data-slides>
+            <li class="slide" data-active>
+                <img src="imgs/2.JPG">
+            </li>
+            <li class="slide">
+                <img src="imgs/222.JPG">
+            </li>
+            <li class="slide">
+                <img src="imgs/67.JPG">
+            </li>
+            <li class="slide">
+                <img src="imgs/298b.jpg">
+            </li>
+            <li class="slide">
+                <img src="imgs/1.jpg">
+            </li>
+        </ul>
     </div>
+</div>
+
+
+<div class="cta">
+    <h2>¿Tienes una idea en mente?</h2>
+    <p>Si es así, cuéntanosla y en nada nos pondremos a ello</p>
+    <a href="index.html#contacto" class="btnCTA">EMPEZAR</a>
+</div>
+
 </body>
 
 <footer>
@@ -133,6 +142,7 @@
                 <li><a href="#" class="fa fa-facebook" target=”_blank”></a></li>
                 <li><a href="https://twitter.com/fustadecor1" class="fa fa-twitter" target=”_blank”></a></li>
                 <li><a href="https://www.instagram.com/fustadecor_exteriors" class="fa fa-instagram" target=”_blank”></a></li>
+                <li><a href="https://www.pinterest.es/santirg1968" class="fa fa-pinterest" target=”_blank”></a></li>
                 <li><a href="#" class="fa fa-whatsapp" target=”_blank”></a></li>
             </ul>
         </div>

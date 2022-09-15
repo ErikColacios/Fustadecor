@@ -6,128 +6,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* -------------------------------- HEADER ------------------------ */
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.829);
-    padding: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-header ul{
-    padding-left: 0;
-    list-style: none;
-}
-
-.logo{
-    padding-left: 40px;
-    width: 230px;
-}
-
-nav ul li{
-    position: relative;
-    float: left;
-}
-
-nav ul li a:hover{
-    color: orange;
-}
-
-nav ul li a{
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-    display: block;
-    transition: 0.25s;
-}
-
-
-nav ul li ul{
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.829);
-    display: none;
-}
-
-nav ul li ul li{
-    width: 100%;
-}
-
-
-nav ul li:focus-within > ul,
-
-nav ul li:hover > ul{
-    display: initial;
-}
-
-
-#menu-bar{
-    display: none;
-}
-
-header label{
-    color: white;
-    cursor: pointer;
-    display: none;
-}
-
-
-@media(max-width: 991px){
-    header{
-        padding: 20px;
-    }
-
-    .logo{
-        width: 190px;
-        padding-left: 10px;
-    }
-
-    header label{
-        display: initial;
-    }
-
-    nav{
-        position: absolute;
-        top: 100%; left: 0; right: 0;
-        background-color: rgba(0, 0, 0, 0.801);
-        border-top: 1px solid black;
-        display: none;
-    }
-
-    nav ul li{
-        width: 100%;
-    }
-
-    nav ul li ul{
-        position: relative;
-        width: 100%;
-    }
-
-    nav ul li ul li{
-        padding-left: 5%;
-        background-color: rgba(0, 0, 0, 0.801);
-    }
-
-    #menu-bar:checked ~ nav{
-        display: initial;
-    }
-}
 
 
 
+/* -------------------------------------------------- Apartados exteriores -------------------------------------------------------------- */
 
 section{
     background-image: url("../imgs/Recursos/blackwood_dark.jpg");
     background-size: cover;
     font-size: 18px;
-    padding-left: 15%;
+    padding-left: 12%;
 }
 
 section h2{
@@ -184,6 +72,7 @@ section h2{
     width: 100%;
     height: 80vh;
     position: relative;
+    padding: 10%;
 }
 .carousel ul{
     list-style: none;
@@ -231,7 +120,6 @@ section h2{
     background-color: rgba(0, 0, 0, .2);
 }
 
-
 .carousel-button.prev{
     left: 1rem;
 }
@@ -245,46 +133,51 @@ section h2{
     }
 }
 
+/* ---------------------------------------- CTA EXTERIORES --------------------------------------------- */
 
-
-
-/* ------------------------------- Footer ------------------------------------------------*/
-
-footer{
-    padding: 5%;
-    color: white;
-    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
-}
-
-footer img{
-    width: 230px;
-}
-
-.social ul{ 
+.cta{
     display: flex;
-    list-style: none;
-    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/imgs/358b.JPG");
+    background-position: top;
+    background-size: cover;
+    height: 40vh;
 }
 
-.social a{
-    font-size: 30px;
+.cta h2{
+    font-size: 4vw;
+}
+.cta p{
+    font-size: 1.5vw;
 }
 
-footer a{
-    color: white;
-    font-size: 16px;
+.btnCTA{
+    background-color: transparent;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 2px solid white;
     text-decoration: none;
-    margin: 10px;
-}
-footer a:hover{
-    color: orange;
+    color: white;
+    transition: 0.4s;
 }
 
-@media (max-width: 400px){
-    footer{
-        font-size: 12px;
+.btnCTA:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+@media (max-width: 750px){
+    .cta h2{
+        font-size: 6vw;
     }
-    .volver a{
-        font-size: 12px;
+    .cta p{
+        font-size: 2.5vw;
+    }
+    .btnCTA{
+        padding: 10px 30px;
     }
 }
