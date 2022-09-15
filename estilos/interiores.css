@@ -63,7 +63,7 @@ section h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("/imgs/cocina4.jpg");
+    background-image: url("../imgs/cocina4.jpg");
     background-position: top;
     background-size: cover;
     height: 40vh;
