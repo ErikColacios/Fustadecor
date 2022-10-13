@@ -55,7 +55,7 @@ body{
 }
 
 .img-piscina{
-    background-image: url("/imgs/Renders/1.png");
+    background-image: url("../imgs/Renders/1.png");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -131,7 +131,7 @@ body{
 
 
 .img-piscina2{
-    background-image: url("/imgs/Renders/mini4.png");
+    background-image: url("../imgs/Renders/mini4.png");
     background-size: cover;
     height: 80vh;
 }
@@ -216,7 +216,7 @@ body{
 
 
 .img-balinesa{
-    background-image: url("/imgs/Renders/modelo3-1.png");
+    background-image: url("../imgs/Renders/modelo3-1.png");
     background-size: cover;
     background-position: center;
     height: 80vh;
