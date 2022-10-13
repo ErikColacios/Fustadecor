@@ -23,7 +23,9 @@
 }
 
 
-
+body{
+    background-color: black;
+}
 
 
 .fdisseny {
@@ -121,6 +123,7 @@
 .especialistas-ideas h2{
     padding-top: 10%;
     font-size: 4vw;
+    font-weight: 600;
 }
 .especialistas-ideas p{
     font-size: 18px;
@@ -147,6 +150,7 @@
 
 .escala-real h2{
     font-size: 4vw;
+    font-weight: 600;
 }
 
 @media (max-width: 840px){
@@ -170,6 +174,7 @@
 
 .cta h2{
     font-size: 55px;
+    font-weight: 600;
 }
 .cta p{
     text-align: center;
@@ -213,6 +218,7 @@
 
 .proyectos h2{
     font-size: 4vw;
+    font-weight: 600;
 }
 .proyectos p{
     font-size: 18px;
