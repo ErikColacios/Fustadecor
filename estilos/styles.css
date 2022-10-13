@@ -493,12 +493,12 @@ footer a:hover{
     color: orange;
 }
 
-@media (max-width: 400px){
+@media (max-width: 456px){
     footer{
-        font-size: 12px;
+        font-size: 16px;
     }
     .volver a{
-        font-size: 12px;
+        font-size: 6px;
     }
 }
 
