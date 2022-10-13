@@ -1,0 +1,255 @@
+body{
+    background-color: black !important;
+}
+
+.luxury{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 25%;
+}
+
+.luxury h2{
+    font-size: 10vw;
+}
+
+@media (max-width: 800px){
+    .luxury h2{
+        font-size: 15vw;
+    }
+    .luxury p{
+        font-size: 14px;
+    }
+    .luxury{
+        padding-right: 15%;
+    }
+}
+
+
+.mini-piscinas{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+.mini-piscinas h2{
+    font-size: 5vw;
+}
+
+@media (max-width: 800px){
+    .mini-piscinas h2{
+        font-size: 11vw;
+    }
+    .mini-piscinas p{
+        font-size: 14px;
+    }
+}
+
+.img-piscina{
+    background-image: url("/imgs/Renders/1.png");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.contenedor{
+    position: relative;
+}
+
+.piscina{
+    width: 100%;
+}
+
+
+.recuadro{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    width: 60%;
+    bottom: 25%;
+    padding: 20px;
+    font-size: 22px;
+}
+
+@media (max-width: 1000px){
+    .recuadro{
+        bottom: 10%;
+    }
+    .recuadro p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px){
+
+    .recuadro p{
+        font-size: 10px;
+    }
+    .recuadro{
+        padding: 11px;
+    }
+}
+
+
+.ventajas {
+    padding: 2%;
+    color: white;
+    background-position: center;
+    text-align: center;
+}
+
+.icono{
+    transition: 0.3s;
+}
+.icono:hover{
+    transform: translateY(-15px);
+}
+
+@media (max-width: 1000px){
+    .ventajas{
+        font-size: 14px;
+    }
+    .ventajas h3{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .ventajas{
+        font-size: 11px;
+    }
+}
+
+
+.img-piscina2{
+    background-image: url("/imgs/Renders/mini4.png");
+    background-size: cover;
+    height: 80vh;
+}
+
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imgs/Renders/4.png");
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+}
+
+.cta h2{
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
+}
+.cta p{
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
+}
+.btnCTA{
+    background-color: transparent;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.btnCTA:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+@media (max-width: 950px){
+    .cta h2{
+        font-size: 6vw;
+    }
+    .cta p{
+        font-size: 3vw;
+    }
+    .btnCTA{
+        padding: 10px 30px;
+    }
+}
+
+
+
+.balinesas{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+.balinesas h2{
+    font-size: 5vw;
+}
+
+@media (max-width: 800px){
+    .balinesas h2{
+        font-size: 11vw;
+    }
+    .balinesas p{
+        font-size: 14px;
+    }
+}
+
+
+.img-balinesa{
+    background-image: url("/imgs/Renders/modelo3-1.png");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.cta2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imgs/Renders/modelo4-1.png");
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+}
+
+.cta2 h2{
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
+}
+.cta2 p{
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
+}
+
+@media (max-width: 950px){
+    .cta2 h2{
+        font-size: 6vw;
+    }
+    .cta2 p{
+        font-size: 3vw;
+    }
+}

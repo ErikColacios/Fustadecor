@@ -166,7 +166,7 @@ body{
     align-items: center;
     justify-content: center;
     background-image: url("../imgs/Renders/4.png");
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     height: 40vh;
     color: white;
@@ -234,7 +234,7 @@ body{
 /* Galeria de renders */
 .img-area{
     position: relative;
-    height: 380px;
+    height: 460px;
 }
 
 .img-area img{
@@ -253,9 +253,9 @@ body{
     opacity: 0;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1400px){
     .img-area{
-        height: 280px;
+        height: 300px;
     }
 }
 
