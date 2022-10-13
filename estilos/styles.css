@@ -398,7 +398,6 @@ header label{
 }
 
 @media (max-width: 500px){
-
     .renders{
         background-image: url("../imgs/render8.jpg");
         background-size: cover;

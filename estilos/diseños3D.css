@@ -1,0 +1,276 @@
+/* Webfont: Thunder-ExtraBoldLC */@font-face {
+    font-family: 'ThunderExtBd';
+    src: url('Thunder-ExtraBoldLC.eot'); /* IE9 Compat Modes */
+    src: url('Thunder-ExtraBoldLC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Thunder-ExtraBoldLC.woff') format('woff'), /* Modern Browsers */
+         url('Thunder-ExtraBoldLC.woff2') format('woff2'), /* Modern Browsers */
+         url('Thunder-ExtraBoldLC.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Thunder-ExtraLightHC */@font-face {
+    font-family: 'ThunderExtLt';
+    src: url('Thunder-ExtraLightHC.eot'); /* IE9 Compat Modes */
+    src: url('Thunder-ExtraLightHC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Thunder-ExtraLightHC.woff') format('woff'), /* Modern Browsers */
+         url('Thunder-ExtraLightHC.woff2') format('woff2'), /* Modern Browsers */
+         url('Thunder-ExtraLightHC.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+.fdisseny {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "ThunderExtLt", Georgia;
+}
+
+.letras{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.letras span{
+    font-family: "ThunderExtLt", Georgia;
+    font-size: 16vw;
+    color:rgb(92, 43, 226);
+    text-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    line-height: 0.5;
+    transform: translateY(-200%);
+    animation: fall 0.4s forwards;
+}
+
+.fdisseny h2{
+    font-family: "ThunderExtLt", Georgia;
+    font-size: 10vw;
+    color:rgb(28, 42, 230);
+}
+
+.fdisseny p{
+    color: white;
+    font-family: "ThunderExtLt", Georgia;
+    font-size: 2vw;
+    opacity: 0;
+    animation: aparecer 3s forwards;
+}
+
+@media (max-width: 800px){
+    .letras span{
+        font-size: 30vw;
+    }
+    .fdisseny h2{
+        font-size: 21vw;
+    }
+    .fdisseny p{
+        font-size: 21px;
+    }
+}
+
+@keyframes fall {
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes aparecer {
+    100%{
+        opacity: 1;
+    }
+}
+
+.letras span:nth-child(2){
+    animation-delay: 0.1s;
+}
+.letras span:nth-child(3){
+    animation-delay: 0.2s;
+}
+.letras span:nth-child(4){
+    animation-delay: 0.3s;
+}
+.letras span:nth-child(5){
+    animation-delay: 0.4s;
+}
+.letras span:nth-child(6){
+    animation-delay: 0.5s;
+}
+.letras span:nth-child(7){
+    animation-delay: 0.6s;
+}
+.letras span:nth-child(8){
+    animation-delay: 0.7s;
+}
+
+
+
+.especialistas-ideas{
+    color: white;
+    height: 80vh;
+}
+
+
+.especialistas-ideas h2{
+    padding-top: 10%;
+    font-size: 4vw;
+}
+.especialistas-ideas p{
+    font-size: 18px;
+}
+
+@media (max-width: 900px){
+    .especialistas-ideas h2{
+        font-size: 8vw;
+        padding-top: 20%;
+    }
+    .especialistas-ideas p{
+        font-size: 14px;
+    }
+}
+
+
+
+.escala-real{
+    padding-top: 10%;
+    color: white;
+    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
+    min-height: 100vh;
+}
+
+.escala-real h2{
+    font-size: 4vw;
+}
+
+@media (max-width: 840px){
+    .escala-real h2{
+        font-size: 7vw;
+    }
+}
+
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imgs/renders/mini2.png");
+    background-position: top;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+}
+
+.cta h2{
+    font-size: 55px;
+}
+.cta p{
+    text-align: center;
+    font-size: 18px;
+}
+.btnCTA{
+    background-color: transparent;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.btnCTA:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+@media (max-width: 950px){
+    .cta h2{
+        font-size: 6vw;
+    }
+    .cta p{
+        font-size: 3vw;
+    }
+    .btnCTA{
+        padding: 10px 30px;
+    }
+}
+
+
+.proyectos{
+    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
+    color: white;
+    padding: 8%;
+}
+
+.proyectos h2{
+    font-size: 4vw;
+}
+.proyectos p{
+    font-size: 18px;
+}
+
+
+@media (max-width: 950px){
+    .proyectos h2{
+        font-size: 6vw;
+    }
+}
+
+
+/* Galeria de renders */
+.img-area{
+    position: relative;
+    height: 380px;
+}
+
+.img-area img{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.img-area img:hover{
+    opacity: 0;
+}
+
+.presiona-img{
+    color: rgb(0, 110, 255);
+    opacity: 0;
+}
+
+@media (max-width: 1200px){
+    .img-area{
+        height: 280px;
+    }
+}
+
+@media (max-width: 1000px){
+    .img-area{
+        height: 400px;
+    }
+    .presiona-img{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px){
+    .img-area{
+        height: 320px;
+    }
+}
+
+@media (max-width: 500px){
+    .img-area{
+        height: 240px;
+    }
+}
