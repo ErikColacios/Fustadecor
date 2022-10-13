@@ -23,7 +23,9 @@
 }
 
 
-
+body{
+    background-color: black;
+}
 
 
 .fdisseny {
@@ -120,11 +122,10 @@
 
 .especialistas-ideas h2{
     padding-top: 10%;
+    font-weight: 600;
     font-size: 4vw;
 }
-.especialistas-ideas p{
-    font-size: 18px;
-}
+
 
 @media (max-width: 900px){
     .especialistas-ideas h2{
@@ -147,11 +148,12 @@
 
 .escala-real h2{
     font-size: 4vw;
+    font-weight: 600;
 }
 
 @media (max-width: 840px){
     .escala-real h2{
-        font-size: 7vw;
+        font-size: 9vw;
     }
 }
 
@@ -161,7 +163,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../imgs/renders/mini2.png");
+    background-image: url("../imgs/Renders/mini2.png");
     background-position: top;
     background-size: cover;
     height: 40vh;
@@ -170,6 +172,7 @@
 
 .cta h2{
     font-size: 55px;
+    font-weight: 600;
 }
 .cta p{
     text-align: center;
@@ -213,15 +216,13 @@
 
 .proyectos h2{
     font-size: 4vw;
-}
-.proyectos p{
-    font-size: 18px;
+    font-weight: 600;
 }
 
 
 @media (max-width: 950px){
     .proyectos h2{
-        font-size: 6vw;
+        font-size: 8vw;
     }
 }
 
