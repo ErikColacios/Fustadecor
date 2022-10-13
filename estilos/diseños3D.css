@@ -166,7 +166,7 @@ body{
     align-items: center;
     justify-content: center;
     background-image: url("../imgs/Renders/4.png");
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     height: 40vh;
     color: white;
