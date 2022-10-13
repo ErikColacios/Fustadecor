@@ -124,6 +124,7 @@ body{
     padding-top: 10%;
     font-weight: 600;
     font-size: 4vw;
+    font-weight: 600;
 }
 
 
@@ -217,6 +218,9 @@ body{
 .proyectos h2{
     font-size: 4vw;
     font-weight: 600;
+}
+.proyectos p{
+    font-size: 18px;
 }
 
 
