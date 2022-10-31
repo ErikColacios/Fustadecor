@@ -216,11 +216,7 @@ body{
 
 
 .img-balinesa{
-<<<<<<< HEAD
     background-image: url("/imgs/Renders/modelo3.png");
-=======
-    background-image: url("../imgs/Renders/modelo3-1.png");
->>>>>>> 9ef38d199e967ddcfb81f44265a4d576a1941a12
     background-size: cover;
     background-position: center;
     height: 80vh;
