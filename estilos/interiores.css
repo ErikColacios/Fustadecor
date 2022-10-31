@@ -71,9 +71,11 @@ section h2{
 
 .cta h2{
     font-size: 4vw;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
 }
 .cta p{
     font-size: 1.5vw;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
 }
 
 .btnCTA{

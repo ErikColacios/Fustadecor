@@ -15,7 +15,6 @@ section{
     background-image: url("../imgs/Recursos/blackwood_dark.jpg");
     background-size: cover;
     font-size: 18px;
-    padding-left: 12%;
 }
 
 section h2{
@@ -35,9 +34,34 @@ section h2{
 }
 
 .sinfin-posibilidades{
-    padding-bottom: 5%;
     padding-bottom: 15%;
 }
+
+/* -------------------- Accordions ----------------------- */
+.accordion-item{
+    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
+    border: black;
+}
+.accordion-button{
+    font-size: 22px;
+    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
+    box-shadow: none !important;
+    color: white;
+}
+.accordion-body{
+    font-size: 16px;
+}
+
+
+.accordion-button:not(.collapsed){
+    color: white;
+}
+
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0%) invert(100%);
+} 
+
+
 
 @media (max-width: 1100px){
     section h2{
@@ -148,9 +172,12 @@ section h2{
 
 .cta h2{
     font-size: 4vw;
+    font-weight: 600;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
 }
 .cta p{
     font-size: 1.5vw;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.664);
 }
 
 .btnCTA{
