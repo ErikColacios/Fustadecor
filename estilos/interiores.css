@@ -63,8 +63,8 @@ section h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../imgs/cocina4.jpg");
-    background-position: top;
+    background-image: url("../imgs/interiores/cocina4.jpg");
+    background-position: center;
     background-size: cover;
     height: 40vh;
 }

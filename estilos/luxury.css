@@ -31,7 +31,7 @@ body{
 
 
 .mini-piscinas{
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,12 +54,32 @@ body{
     }
 }
 
-.img-piscina{
-    background-image: url("../imgs/Renders/1.png");
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
+/* Video minipiscinas */
+.backvideo_minipiscinas{
+    width: 100%;    
+    margin-bottom: -10px;
 }
+
+
+
+.proyectos{
+    background-image: url("../imgs/Recursos/blackwood_dark.jpg");
+    color: white;
+    padding: 8%;
+}
+
+.proyectos h2{
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+
+@media (max-width: 950px){
+    .proyectos h2{
+        font-size: 8vw;
+    }
+}
+
 
 .contenedor{
     position: relative;
@@ -130,10 +150,54 @@ body{
 }
 
 
-.img-piscina2{
-    background-image: url("../imgs/Renders/mini4.png");
-    background-size: cover;
-    height: 80vh;
+
+/* Galeria de mini-piscinas */
+.img-area{
+    position: relative;
+    height: 460px;
+}
+
+.img-area img{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.img-area img:hover{
+    opacity: 0;
+}
+
+.presiona-img{
+    color: rgb(0, 110, 255);
+    opacity: 0;
+}
+
+@media (max-width: 1400px){
+    .img-area{
+        height: 300px;
+    }
+}
+
+@media (max-width: 1000px){
+    .img-area{
+        height: 400px;
+    }
+    .presiona-img{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px){
+    .img-area{
+        height: 320px;
+    }
+}
+
+@media (max-width: 500px){
+    .img-area{
+        height: 240px;
+    }
 }
 
 
@@ -142,7 +206,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../imgs/Renders/4.png");
+    background-image: url("../imgs/renders_minipiscinas/mini2.png");
     background-position: center;
     background-size: cover;
     height: 40vh;
@@ -188,7 +252,7 @@ body{
     }
 }
 
-
+/* -------------------------------------------- Balinesas -------------------------------------------- */
 
 .balinesas{
     min-height: 50vh;
@@ -216,7 +280,7 @@ body{
 
 
 .img-balinesa{
-    background-image: url("/imgs/Renders/modelo3.png");
+    background-image: url("../imgs/renders_balinesas/modelo3.png");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -227,7 +291,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../imgs/Renders/modelo4-1.png");
+    background-image: url("../imgs/renders_balinesas/modelo4-1.png");
     background-position: center;
     background-size: cover;
     height: 40vh;
@@ -253,3 +317,10 @@ body{
         font-size: 3vw;
     }
 }
+
+
+
+
+
+
+

@@ -20,13 +20,13 @@
         AOS.init();
       </script>
     <header>
-        <a href="index.html"><img src="imgs/logos/new_logo_XL.png" alt="fustadecor_logo" class="logo"></a>     
+        <a href="index.php"><img src="imgs/logos/new_logo_XL.png" alt="fustadecor_logo" class="logo"></a>     
 
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar"><img src="burger_icon.png" width="40" style="fill: white" alt="Burger Icon"></label>
         <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li><a href="exteriores.html">Exteriores</a>
                     <li><a href="interiores.html">Interiores +</a>
                         <ul>
@@ -37,17 +37,20 @@
                             <li><a href="interiores.html#escaleras">Escaleras</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Proyectos 3D</a></li>
+                    <li><a href="#" id="active">Proyectos 3D</a></li>
                     <li><a href="luxury.html">Luxury +</a>
                         <ul>
                             <li><a href="luxury.html#mini-piscinas">Mini piscinas</a></li>
                             <li><a href="luxury.html#balinesas">Balinesas</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="index.php#contacto">Contacto</a></li>
         </nav>
     </header>
-
+    <script>
+        const active = document.getElementById("active");
+        active.style.color = "orange";
+    </script>
 
 
     <section class="fdisseny">
@@ -102,7 +105,7 @@
     <section class="cta">
         <h2>¡Consigue tu rénder ahora!</h2>
         <p>Cuéntanos más sobre tu propuesta de proyecto y te prepararemos un rénder para que veas como quedará</p>
-        <a href="index.html#contacto" class="btnCTA">LO QUIERO</a>
+        <a href="index.php#contacto" class="btnCTA">LO QUIERO</a>
     </section>
 
     <section class="proyectos text-center"> 
@@ -114,22 +117,32 @@
         <div class="container-fluid" data-aos="fade-up">
             <div class="row">
                 <div class="col-lg-6 col-12 img-area">
-                        <img src="imgs/Renders/1.png" alt="Render 3" class="img-fluid">
-                        <img src="imgs/Renders/2.png" alt="Render 3 cambiado" class="img-fluid">
+                        <img src="imgs/renders/2.png" alt="Render" class="img-fluid">
+                        <img src="imgs/renders/1.png" alt="Render cambiado" class="img-fluid">
                 </div>
                 <div class="col-lg-6 col-12 img-area">
-                        <img src="imgs/Renders/5d.png" alt="Render 4" class="img-fluid">
-                        <img src="imgs/Renders/5n.png" alt="Render 4 cambiado" class="img-fluid">
+                        <img src="imgs/renders/6.png" alt="Render" class="img-fluid">
+                        <img src="imgs/renders/5.png" alt="Render cambiado" class="img-fluid">
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 col-12 img-area">
-                    <img src="imgs/Renders/modelo5.png" alt="Render 5" class="img-fluid">
-                    <img src="imgs/Renders/modelo5n.png" alt="Render 5 cambiado" class="img-fluid">
+                    <img src="imgs/renders/render3.jpg" alt="Render" class="img-fluid">
+                    <img src="imgs/renders/render2.jpg" alt="Render cambiado" class="img-fluid">
                 </div>
                 <div class="col-lg-6 col-12 img-area">
-                    <img src="imgs/Renders/6.png" alt="Render 6" class="img-fluid">
-                    <img src="imgs/Renders/8.png" alt="Render 6 cambiado" class="img-fluid">
+                    <img src="imgs/renders/12.png" alt="Render" class="img-fluid">
+                    <img src="imgs/renders/11.png" alt="Render cambiado" class="img-fluid">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-12 img-area">
+                    <img src="imgs/renders/10.png" alt="Render" class="img-fluid">
+                    <img src="imgs/renders/9.png" alt="Render cambiado" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-12 img-area">
+                    <img src="imgs/renders/7.png" alt="Render" class="img-fluid">
+                    <img src="imgs/renders/8.png" alt="Render cambiado" class="img-fluid">
                 </div>
             </div>
         </div>

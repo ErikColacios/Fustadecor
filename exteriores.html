@@ -20,14 +20,14 @@
         AOS.init();
       </script>
     <header>
-        <a href="index.html"><img src="imgs/logos/new_logo_XL.png" alt="fustadecor_logo" class="logo"></a>     
+        <a href="index.php"><img src="imgs/logos/new_logo_XL.png" alt="fustadecor_logo" class="logo"></a>     
 
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar"><img src="burger_icon.png" width="40" style="fill: white" alt="Burger Icon"></label>
         <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Exteriores</a>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="#" id="active">Exteriores</a>
                     <li><a href="interiores.html">Interiores +</a>
                         <ul>
                             <li><a href="interiores.html#parquets">Parquets</a></li>
@@ -44,9 +44,13 @@
                             <li><a href="luxury.html#balinesas">Balinesas</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="index.php#contacto">Contacto</a></li>
         </nav>
     </header>
+    <script>
+        const active = document.getElementById("active");
+        active.style.color = "orange";
+    </script>
 
 
     <section>
@@ -58,7 +62,7 @@
                     elegante y moderno. Y a nosotros esto se nos da muy bien</p>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto" data-aos="fade-up">
-                    <img src="imgs/341.jpg" class="img-fluid" alt="Patio con piscina">
+                    <img src="imgs/exteriores/341.jpg" class="img-fluid" alt="Patio con piscina">
                 </div>
             </div>                    
         </div>
@@ -66,7 +70,7 @@
         <div class="sinfin-posibilidades container">
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-auto me-4 mb-5" data-aos="fade-up">
-                    <img src="imgs/11.jpg" class="img-fluid pb-3" alt="Patio con piscina">
+                    <img src="imgs/exteriores/11.jpg" class="img-fluid pb-3" alt="Patio con piscina">
                     <p>Aqui en Fustadecor no solo nos especializamos en madera. También tenemos un grupo de industriales con los que 
                     podemos realizar un exterior completo. Contamos con albañilería, equipos de electricidad
                     (para instalar circuitos electricos e iluminación), fontaneria (riegos, sistemas de ducha, aspersion), 
@@ -81,13 +85,13 @@
                         para finalmente conseguir un acabado excelente</p>
                     </div>
                     <div>
-                        <img src="imgs/171.jpg" alt="Patio con tarima" class="img-fluid">
+                        <img src="imgs/exteriores/171.jpg" alt="Patio con tarima" class="img-fluid">
                     </div>
                 </div>
             </div>        
             
             <!-- Accordions -->
-                <div class="container accordion pt-4" id="accordionExample">
+                <!-- <div class="container accordion pt-4" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -126,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
         </div>
 
 
@@ -141,15 +145,15 @@
                     y obviamente con los mejores materiales que puedes encontrar</p>
                 </div>
                 <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto" data-aos="fade-up">
-                    <img src="imgs/10.jpg" class="img-fluid" alt="Esquina piscina">
+                    <img src="imgs/exteriores/10.jpg" class="img-fluid" alt="Esquina piscina">
                 </div>
             </div>    
             <div class="container row d-flex justify-content-center mt-5">
                 <div class="col col-xl-7 col-sm-6 col-auto mb-5" data-aos="fade-up">
-                    <img src="imgs/165.JPG" class="img-fluid" alt="Mesa y sofa">
+                    <img src="imgs/exteriores/165.JPG" class="img-fluid" alt="Mesa y sofa">
                 </div>
                 <div class="col col-xl-4 col-sm-6 col-auto" data-aos="fade-up">
-                    <img src="imgs/339.JPG" class="img-fluid" alt="Pergola">
+                    <img src="imgs/exteriores/339.JPG" class="img-fluid" alt="Pergola">
                 </div>
             </div>  
         </div>
@@ -163,19 +167,34 @@
         <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
         <ul data-slides>
             <li class="slide" data-active>
-                <img src="imgs/2.JPG">
+                <img src="imgs/exteriores/0.jpg">
             </li>
             <li class="slide">
-                <img src="imgs/222.JPG">
+                <img src="imgs/exteriores/341.JPG">
             </li>
             <li class="slide">
-                <img src="imgs/67.JPG">
+                <img src="imgs/exteriores/67.JPG">
             </li>
             <li class="slide">
-                <img src="imgs/298b.jpg">
+                <img src="imgs/exteriores/352.jpg">
             </li>
             <li class="slide">
-                <img src="imgs/1.jpg">
+                <img src="imgs/exteriores/101.jpg">
+            </li>
+            <li class="slide">
+                <img src="imgs/exteriores/94.jpg">
+            </li>
+            <li class="slide">
+                <img src="imgs/exteriores/147.jpg">
+            </li>
+            <li class="slide">
+                <img src="imgs/exteriores/160.jpg">
+            </li>
+            <li class="slide">
+                <img src="imgs/exteriores/139.jpg">
+            </li>
+            <li class="slide">
+                <img src="imgs/exteriores/318.jpg">
             </li>
         </ul>
     </div>
@@ -185,7 +204,7 @@
 <div class="cta">
     <h2>¿Tienes una idea en mente?</h2>
     <p>Si es así, cuéntanosla y en nada nos pondremos a ello</p>
-    <a href="index.html#contacto" class="btnCTA">EMPEZAR</a>
+    <a href="index.php#contacto" class="btnCTA">EMPEZAR</a>
 </div>
 
 </body>

@@ -21,13 +21,13 @@
         AOS.init();
       </script>
     <header>
-        <a href="index.html"><img src="imgs/logos/new_logo_XL.png" alt="fustadecor_logo" class="logo"></a>     
+        <a href="index.php"><img src="imgs/logos/new_logo_XL.png" alt="fustadecor_logo" class="logo"></a>     
 
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar"><img src="burger_icon.png" width="40" style="fill: white" alt="Burger Icon"></label>
         <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li><a href="exteriores.html">Exteriores</a>
                     <li><a href="interiores.html">Interiores +</a>
                         <ul>
@@ -39,23 +39,27 @@
                         </ul>
                     </li>
                     <li><a href="diseños3D.html">Proyectos 3D</a></li>
-                    <li><a href="#">Luxury +</a>
+                    <li><a href="#" id="active">Luxury +</a>
                         <ul>
                             <li><a href="#mini-piscinas">Mini piscinas</a></li>
                             <li><a href="#balinesas">Balinesas</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="index.php#contacto">Contacto</a></li>
         </nav>
     </header>
+    <script>
+        const active = document.getElementById("active");
+        active.style.color = "orange";
+    </script>
 
     <section class="luxury">
         <h2>Luxury</h2>
         <p>En Fustadecor ademas de rediseñar tu jardin o terraza tambíen podemos llevar a cabo obras más concretas  como por ejemplo construcción de mini piscinas y balinesas. 
         Estas son obras de gran calidad hechas a mano que sin duda harán que tu espacio destaque notablemente respecto a cualquier otro 
         y tus huespedes quedarán sin palabras, además de ofrecer un confort sin igual</p>
-        <p></p>
     </section>
+
 
     <!-- Mini piscinas -->
     <section class="mini-piscinas" id="mini-piscinas">
@@ -64,11 +68,9 @@
         diversión para ti y tus hijos y además es un indicador de lujo, ya que no todo el mundo puede permitirse empezar una obra como esta</p>
         <p><span style="color: orange; font-weight: 600;">Sin embargo las mini piscinas vinieron a cambiarlo todo</span></p>
     </section>
-
-    <div class="img-piscina"></div>
-
+    
     <div class="contenedor">
-        <img src="imgs/Renders/5n.png" alt="Mini piscina 2" class="piscina">
+        <video src="imgs/renders_minipiscinas/minipiscinas_Trim.mp4" autoplay muted loop plays-inline class="backvideo_minipiscinas" alt="Video con varios renders"></video> 
         <div class="recuadro" data-aos="fade-right">
             <p>Estas mini piscinas son similares a las piscinas de obra convencionales pero cuentan con una serie de ventajas interesantes</p>
         </div>
@@ -89,23 +91,55 @@
             <div class="col-lg-4 col-md-4 p-4">
                 <iconify-icon icon="gridicons:customize" style="color: white;" width="60" height="60" class="icono pb-3"></iconify-icon>
                 <h3>Personalizable</h3>
-                <p>Puedes decorar tu piscina con tarima, plantas o incluso zonas chill out y además puedes escoger su profundidad</p>
+                <p>Puedes decorar tu piscina con tarima, plantas o incluso zonas chill out a medida</p>
             </div>
         </div>
     </section>
 
     <div class="contenedor">
-        <img src="imgs/Renders/6.png" alt="Mini piscina 3" class="piscina">
+        <img src="imgs/renders_minipiscinas/mini1.png" alt="Mini piscina 3" class="piscina">
         <div class="recuadro" data-aos="fade-right">
             <p>Además, este tipo de piscinas se pueden montar en prácticamente superficie, ya sea en un jardin, en un ático o incluso en interiores </p>
         </div>
     </div>
-    <img src="imgs/Renders/mini3.png" alt="Mini piscina 4" class="piscina">
+
+
+    <section class="proyectos text-center"> 
+        <div data-aos="fade-up">
+            <h2 class="mb-3">Galería de mini-piscinas</h2>
+            <p>Échale un vistazo a algunos de los rénders de nuestras mini-piscinas</p>
+        </div>
+        <p class="presiona-img">Presiona la imagen para ver el cambio</p>
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6 col-12 img-area">
+                        <img src="imgs/renders_minipiscinas/mini7.png" class="img-fluid">
+                        <img src="imgs/renders_minipiscinas/mini1.png" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-12 img-area">
+                        <img src="imgs/renders_minipiscinas/mini3.png" alt="Render 4" class="img-fluid">
+                        <img src="imgs/renders_minipiscinas/mini4.png" alt="Render 4 cambiado" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-12 img-area">
+                        <img src="imgs/renders_minipiscinas/mini2.png" class="img-fluid">
+                        <img src="imgs/renders_minipiscinas/mini6.png" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-12 img-area">
+                        <img src="imgs/renders_minipiscinas/mini8n.png" alt="Render 4" class="img-fluid">
+                        <img src="imgs/renders_minipiscinas/mini8.png" alt="Render 4 cambiado" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
     <section class="cta">
         <h2>¿Te interesa una mini piscina?</h2>
         <p>¡Infórmanos sobre como te gustaría montarla en tu jardín o terraza y te la traeremos antes de lo que crees!</p>
-        <a href="index.html#contacto" class="btnCTA">ME INTERESA</a>
+        <a href="index.php#contacto" class="btnCTA">ME INTERESA</a>
     </section>
 
 
@@ -120,13 +154,13 @@
     <div class="img-balinesa"></div>
 
     <div class="contenedor">
-        <img src="imgs/Renders/modelo1.png" alt="Balinesa 1" class="piscina">
+        <img src="imgs/renders_balinesas/modelo1.png" alt="Balinesa 1" class="piscina">
         <div class="recuadro" data-aos="fade-right">
             <p>Podemos personalizar la balinesa a tu gusto, ajustando el tamaño, la forma o hasta complementos de esta, incluyendo el colchón, las cortinas y los cojines</p>
         </div>
     </div>
     <div class="contenedor">
-        <img src="imgs/Renders/modelo5.png" alt="Balinesa 1" class="piscina">
+        <img src="imgs/renders_balinesas/modelo5.png" alt="Balinesa 1" class="piscina">
         <div class="recuadro" data-aos="fade-right">
             <p>Las balinesas no tienen por qué ser solo camas, también podemos crear una estructura similar a una terraza para comer en familia, o una zona chillout </p>
         </div>
@@ -136,7 +170,7 @@
     <section class="cta2">
         <h2>¿Te interesa una balinesa?</h2>
         <p>¡Infórmanos sobre como te gustaría montarla en tu jardín o terraza y te la traeremos antes de lo que crees!</p>
-        <a href="index.html#contacto" class="btnCTA">ME INTERESA</a>
+        <a href="index.php#contacto" class="btnCTA">ME INTERESA</a>
     </section>
 </body>
 
@@ -162,5 +196,4 @@
         </div>
     </div>
 </footer>
-
 </html>
